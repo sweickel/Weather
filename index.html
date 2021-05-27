@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" href="style.css">
+    <script src="/config.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
+    <script type="module" src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="no_location">
+        <div id="temp_units">
+            <button type="button" id="f" class="active">°F</button>
+            <button type="button" id="c">°C</button>
+        </div>
+        <div>            
+            <input type="text" placeholder="Search by City" id="searchBar">
+            <button type="submit" id="search">Search</button>
+        </div>
+    </nav>
+    <div id="display">
+            <div class="panel" id="info_panel">
+                <h1 id="cityinfo">City Weather</h1>
+                <p id="time">As of TIME</p>
+                <div id="top_panel_info">
+                    <div id="current">
+                        <p id="currentTemp">Current Temp:</p>
+                        <p id="description">Description</p>
+                    </div>
+                    <div>
+                        <img src="" alt="Current weather-themed icon" id="icon">
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="panel" id="info_panel2">
+                <h2 id="outlook_title">Outlook for [City] Today</h2>
+                <div id="outlook_wrapper">
+                    <div class="outlook_section" id="outlook_left">
+                        <div>
+                            <h4 id="stat_0">Stat</h4>
+                            <p id="value_0">Value</p>
+                        </div>
+                        <div>
+                            <h4 id="stat_1">Stat</h4>
+                            <p id="value_1">Value</p>
+                        </div>
+                        <div>
+                            <h4 id="stat_2">Stat</h4>
+                            <p id="value_2">Value</p>
+                        </div>
+                        <div>
+                            <h4 id="stat_3">Stat</h4>
+                            <p id="value_3">Value</p>
+                        </div>
+                    </div>
+                    <div class="outlook_section" id="outlook_right">
+                        <div>
+                            <h4 id="stat_4">Stat</h4>
+                            <p id="value_4">Value</p>
+                        </div>
+                        <div>
+                            <h4 id="stat_5">Stat</h4>
+                            <p id="value_5">Value</p>
+                        </div>
+                        <div>
+                            <h4 id="stat_6">Stat</h4>
+                            <p id="value_6">Value</p>
+                        </div>
+                        <div>
+                            <h4 id="stat_7">Stat</h4>
+                            <p id="value_7">Value</p>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+            <div class="panel">
+                <div id="three-day-wrapper">
+                    <div class="day_card" id="f0">
+                        <h3 id="d0">Today</h3>
+                        <h2 id="max0"></h2>
+                        <p id="min0"></p>
+                        <img id="icon0"></img>
+                        <p id="desc0"></p>
+                    </div>
+                    <div class="day_card" id="f1">
+                        <h3 id="d1">Tomorrow</h3>
+                        <h2 id="max1"></h2>
+                        <p id="min1"></p>
+                        <img id="icon1"></img>
+                        <p id="desc1"></p>
+                    </div>
+                    <div class="day_card" id="f2">
+                        <h3 id ="d2">Next Day</h3>
+                        <h2 id="max2"></h2>
+                        <p id="min2"></p>
+                        <img id="icon2"></img>
+                        <p id="desc2"></p>
+                    </div>
+                    <div class="day_card" id="f3">
+                        <h3 id="d3">following day</h3>
+                        <h2 id="max3"></h2>
+                        <p id="min3"></p>
+                        <img id="icon3"></img>
+                        <p id="desc3"></p>
+                    </div>
+                </div>
+            </div>
+    </div>  
+</body>
+</html>

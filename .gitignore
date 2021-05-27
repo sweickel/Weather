@@ -1,0 +1,6 @@
+/node_modules
+
+config.js
+.env
+weatherapp/node_modules/
+node_modules
